@@ -38,6 +38,14 @@ export default function Gallery() {
                     close={() => setIndex(-1)}
                     index={index}
                     slides={galleryImages}
+                    carousel={{
+                        imageFit: "cover",
+                    }}
+                    styles={{
+                        container: {
+                            padding: 0
+                        }
+                    }}
                 />
             </div>
         </div>
